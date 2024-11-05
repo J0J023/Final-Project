@@ -22,19 +22,10 @@ providing_insight:
     reflection about {topic}.
   agent: insight_agent
 
-cognitive_reframing:
-  description: >
-    Detect negative or rigid thought patterns and offer alternative interpretations/perspectives based on
-    the user's situation such as all-or-nothing thinking or catastrophizing. 
-  expected_output: >
-      Suggest alternative interpreations/perspectives in the form of 5 bullet points and use Socratic form
-      of questioning to help the user find alternatives by themselves with regards to {topic}.
-  agent: cognitive_reframer
-
 mindfulness_techniques:
   description: >
     Provide short guided mindfullness prompts to help the user stay grounded even in a negative headspace. 
   expected_output: >
-      A few sentences followed by few bullet points about different techniques used to stay grounded with reference to {topic}.
-      Addtionally, adjust response appropriately if user uses any high stress language of sort.
+    A few sentences followed by few bullet points about different techniques used to stay grounded with reference to {topic}.
+    Addtionally, adjust response appropriately if user uses any high stress language of sort.
   agent: mindfulness_agent

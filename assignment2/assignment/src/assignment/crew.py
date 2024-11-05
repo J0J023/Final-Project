@@ -14,7 +14,7 @@ class AssignmentCrew():
 	def search_agent(self) -> Agent:
 		return Agent(
 			config=self.agents_config['search_agent'],
-			tools=[SerperDevTool()],
+			tools=[search_tool],
 			verbose=True
 		)
 
@@ -32,12 +32,12 @@ class AssignmentCrew():
 			verbose=True
 		)
 	
-	@agent
-	def cognitive_reframer(self) -> Agent:
-		return Agent(
-			config=self.agents_config['cognitive_reframer'],
-			verbose=True
-		)
+	# @agent
+	# def cognitive_reframer(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['cognitive_reframer'],
+	# 		verbose=True
+	# 	)
 	
 	@agent
 	def mindfulness_agent(self) -> Agent:
@@ -65,14 +65,7 @@ class AssignmentCrew():
 			config=self.tasks_config['providing_insight'],
 			output_file='diagnosis.md'
 		)
-	
-	@task
-	def cognitive_reframing(self) -> Task:
-		return Task(
-			config=self.tasks_config['coginitive_reframing'],
-			output_file='diagnosis.md'
-		)
-	
+		
 	@task
 	def mindfulness_techniques(self) -> Task:
 		return Task(

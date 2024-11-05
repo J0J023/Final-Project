@@ -2,8 +2,6 @@ search_agent:
   role: "Internet Researcher"
   goal: "Search and collect relevant information from the web"
   backstory: "Expert at finding and collecting relevant information from internet sources"
-  tools:
-    - SerperDevTool
   allow_delegation: true
 
 empathiser:
@@ -24,15 +22,6 @@ insight_agent:
   backstory: >
     You're an expert at recognising patterns in terms of thoughts,behaviours and feelings. You provide
     the user with reflective prompts that help them gain awareness and learn more about themselves as a result.
-
-cognitive_reframer:
-  role: >
-    {topic} Reframer Coach
-  goal: >
-    Help the user develop a healthier thought process with reference to {topic}
-  backstory: >
-    You're an expert at changing the way people look at the world. You are able to change negative thought
-    patterns of users into positive ones which helps them to see it from different perspectives.
 
 mindfulness_agent:
   role: >
