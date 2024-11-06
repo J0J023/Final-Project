@@ -14,7 +14,6 @@ from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.memory import ChatMemoryBuffer
 import os
 from dotenv import load_dotenv
-from jina import Client, Document
 
 load_dotenv()
 
