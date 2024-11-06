@@ -13,7 +13,7 @@ def main():
 
     # Initialize or load the AI assistant
     if st.session_state.assistant is None:
-        data_path = "C:/Users/JOEL WILLIAMS/PESUIO/agenticRAG/data"  
+        data_path = "C:/Users/JOEL WILLIAMS/OneDrive/Desktop/Final-Project/final_project/data"  
         index_path = "./index" 
         
         try:
