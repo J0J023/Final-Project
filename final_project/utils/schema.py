@@ -143,7 +143,7 @@ class CustomAIAssistant:
 
 if __name__ == "__main__":
     assistant = CustomAIAssistant(
-        data_path="C:/Users/JOEL WILLIAMS/OneDrive\Desktop/Final-Project/final_project/data",
+        data_path="C:/Users/JOEL WILLIAMS/Final-Project/final_project/data",
         index_path="./index"
     )
     result = assistant.query(" I am a 17 yr old male and i have been overwhelmingly sad and angry these last few days, what is going on")
